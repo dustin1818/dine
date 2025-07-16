@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "League Spartan", sans-serif;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1110px;
+  margin: auto;
+}
+
+.reservation {
+  background: url("./images/Bitmap.jpg") no-repeat bottom center;
+  background-size: cover;
+  height: 60vh;
+  width: 100%;
+  padding: 40px 20px;
+}
+
+.reservation-wrapper {
+  display: flex;
+  justify-content: space-between;
+  color: #ffffff;
+  padding-top: 100px;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 768px) {
+  .reservation-wrapper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.reservation-left {
+  max-width: 545px;
+}
+
+.reservation-left h1 {
+  font-size: 80px;
+  font-weight: 300;
+  line-height: 80px;
+  letter-spacing: -1px;
+  margin-bottom: 20px;
+}
+
+.reservation-left p {
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0;
+}
+
+.reservation-card {
+  background: #ffffff;
+  padding: 40px;
+  width: 440px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.reservation-form {
+  display: grid;
+  gap: 12px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #111111;
+}
+
+.form-group input,
+.form-group select {
+  padding: 12px 16px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: #111111;
+}
+
+.btn-submit {
+  background-color: #111111;
+  color: #ffffff;
+  border: none;
+  padding: 14px 24px;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.btn-submit:hover {
+  background-color: #151a21;
+}
+
+.btn-back {
+  display: block;
+  background-color: #9e7f66;
+  color: #ffffff;
+  text-align: center;
+  border: none;
+  padding: 14px 24px;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.form-group input:valid,
+.form-group select:valid {
+  border-color: #9e7f66;
+}
+
+.gray {
+  background-color: #f2f3f4;
+  height: 40vh;
+}
+
+@media screen and (max-width: 1280px) {
+  .gray {
+    height: 80vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .reservation-card {
+    padding: 30px 20px;
+    margin: 20px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .reservation-left {
+    max-width: 100%;
+  }
+
+  .reservation-left h1 {
+    font-size: 30px;
+  }
+  .reservation-card {
+    width: 330px;
+  }
+
+  .gray {
+    height: 90vh;
+  }
+
+  .btn-submit,
+  .btn-back {
+    padding: 14px 14px;
+    font-size: 14px;
+  }
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+}
+
+.lower-section {
+  height: 100%;
+  background-color: #111111;
+  color: #ffffff;
+  padding: 60px 0;
+}
+
+.lower-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.lower-wrapper img {
+  width: 100px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.right-lower-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.right-lower-wrapper span {
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: 2px;
+}
+
+@media screen and (max-width: 768px) {
+  .lower-section {
+    height: 100%;
+  }
+
+  .lower-wrapper {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .right-lower-wrapper {
+    text-align: center;
+  }
+}

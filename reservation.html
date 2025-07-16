@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./reservation.css" />
+    <title>Dine</title>
+  </head>
+  <body>
+    <section class="reservation">
+      <nav class="nav container">
+        <img src="./images/dine.png" alt="" />
+      </nav>
+
+      <div class="reservation-wrapper container">
+        <div class="reservation-left">
+          <h1>Reservations</h1>
+          <p>
+            We can’t wait to host you. If you have any special requirements
+            please feel free to call on the phone number below. We’ll be happy
+            to accommodate you.
+          </p>
+        </div>
+
+        <div class="reservation-right">
+          <div class="reservation-card">
+            <form id="reservationForm" class="reservation-form">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required />
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+
+              <div class="form-group">
+                <label for="date">Date</label>
+                <input type="date" id="date" name="date" required />
+              </div>
+
+              <div class="form-group">
+                <label for="time">Time</label>
+                <input type="time" id="time" name="time" />
+              </div>
+
+              <div class="form-group">
+                <label for="guests">Number of Guests</label>
+                <select id="guests" name="guests" required>
+                  <option value="">Select number of guests</option>
+                  <option value="1">1 person</option>
+                  <option value="2">2 people</option>
+                  <option value="3">3 people</option>
+                  <option value="4">4 people</option>
+                  <option value="5">5 people</option>
+                  <option value="6+">6+ people</option>
+                </select>
+              </div>
+
+              <button type="submit" class="btn-submit">Make Reservation</button>
+              <a href="./index.html" class="btn-back">Go Back</a>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="gray"></section>
+
+    <footer>
+      <div class="lower-section">
+        <div class="lower-wrapper container">
+          <img src="./images/dine.png" alt="" />
+
+          <div class="right-lower-wrapper">
+            <span>Marthwaite, Sedbergh</span>
+            <span>Cumbria</span>
+            <span>+00 44 123 4567</span>
+          </div>
+
+          <div class="right-lower-wrapper">
+            <span>OPEN TIMES</span>
+            <span>MON - FRI: 09:00 AM - 10:00 PM</span>
+            <span>SAT - SUN: 09:00 AM - 11:30 PM</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./reservation.js"></script>
+  </body>
+</html>
